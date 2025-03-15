@@ -1,135 +1,219 @@
-<a name="readme-top"></a>
+markdown
+Copy
+# **PROYECTO WEBPACK CON LINTERS Y DESPLIEGUE EN AZURE**
 
-<div align="center"><img src="logo.png" alt="logo" width="140" height="auto" style="border-radius:50%" /> <br/> <h3><b>PROYECTO WEBPACK</b></h3></div>
-✅ TABLE OF CONTENTS
-📖 About the Project
+## **Descripción del Proyecto**
+Este proyecto es una configuración básica de **Webpack** para un proyecto de desarrollo web. Incluye la configuración de loaders para **CSS**, **HTML**, y plugins como `html-webpack-plugin` y `webpack-dev-server`. Además, se integra con linters como **ESLint**, **Stylelint**, y **Hint** para garantizar la calidad del código. El proyecto también está configurado para desplegarse automáticamente en **Azure** mediante **GitHub Actions**.
 
-⚒️ Build With
+---
 
-Tech Stack
+## **Tecnologías Utilizadas**
+### **Tech Stack**
+- **Webpack**: Empaquetador de módulos.
+- **Babel**: Transpilador de JavaScript.
+- **ESLint**: Linter para JavaScript.
+- **Stylelint**: Linter para CSS.
+- **Hint**: Linter para HTML.
+- **HTML, CSS, JavaScript**: Tecnologías base.
 
-Key Features
+---
 
-🚀 Live Demo
+## **Características Principales**
+- **Configuración de Webpack**: Incluye loaders para CSS, HTML y plugins como `html-webpack-plugin`.
+- **Integración con Linters**: ESLint, Stylelint, y Hint para garantizar la calidad del código.
+- **Servidor de Desarrollo**: Uso de `webpack-dev-server` para desarrollo local.
+- **Despliegue Automático**: Configuración de GitHub Actions para despliegue en Azure.
 
-💻 Getting Started
+---
 
-Setup
+## **Instalación**
+Para instalar las dependencias del proyecto, sigue estos pasos:
 
-Prerequisites
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/proyecto-webpack.git
+   cd proyecto-webpack
+Instala las dependencias:
 
-Install
-
-Usage
-
-Run tests
-
-Deployment
-
-👥 Authors
-
-🕹️ Future Features
-
-🤝 Contributing
-
-⭐ Show your Support
-
-👏 Acknowledgements
-
-❓ FAQ
-
-📃 License
-
-📖 PROYECTO WEBPACK <a name="about-project"></a>
-[Proyecto Webpack] Este proyecto es una configuración básica de Webpack para un proyecto de desarrollo web. Incluye la configuración de loaders para CSS, HTML, y plugins como html-webpack-plugin y webpack-dev-server. Además, se integra con linters como ESLint, Stylelint, y Hint para garantizar la calidad del código.
-
-⚒️ Build With <a name="built-with"></a>
-<p> Este proyecto fue construido utilizando: - **Webpack**: Para empaquetar y optimizar los recursos del proyecto. - **Babel**: Para transpilar código JavaScript moderno. - **ESLint, Stylelint, Hint**: Para garantizar la calidad del código. - **HTML, CSS, JavaScript**: Tecnologías base del desarrollo web. </p>
-Tech Stack <a name="tech-stack"></a>
-Webpack: Empaquetador de módulos.
-
-Babel: Transpilador de JavaScript.
-
-ESLint: Linter para JavaScript.
-
-Stylelint: Linter para CSS.
-
-Hint: Linter para HTML.
-
-HTML, CSS, JavaScript: Tecnologías base.
-
-<details> <summary>Client</summary> <ul> <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li> </ul> </details><details> <summary>Markdown</summary> <ul> <li><a href="https://markdown.es/sintaxis-markdown/">Markdown</a></li> </ul> </details>
-Key Features <a name="key-features"></a>
-Configuración de Webpack: Incluye loaders para CSS, HTML y plugins como html-webpack-plugin.
-
-Integración con Linters: ESLint, Stylelint, y Hint para garantizar la calidad del código.
-
-Servidor de Desarrollo: Uso de webpack-dev-server para desarrollo local.
-
-Despliegue Automático: Configuración de GitHub Actions para despliegue en Azure.
-
-<p align="right"><a href="#readme-top">Back to top</a></p>
-💻 Getting Started <a name="getting-started"></a>
-Para obtener una copia local y ejecutar el proyecto, sigue estos pasos:
-
-Prerequisites <a name="prerequisites"></a>
-Para ejecutar este proyecto necesitas las siguientes herramientas:
-
-Node.js
-
-Git
-
-VS Code
-
-Setup <a name="setup"></a>
-Clona este repositorio en la carpeta de tu preferencia:
-git clone https://github.com/tu-usuario/proyecto-webpack.git
-cd proyecto-webpack
-
-Install <a name="install"></a>
-Instala las dependencias del proyecto:
+bash
+Copy
 npm install
+Uso
+Compilar el Proyecto
+Para compilar el proyecto en modo desarrollo, ejecuta:
 
-Usage <a name="usage"></a>
-Para ejecutar el proyecto en modo desarrollo:
+bash
+Copy
 npm run build-dev
+Para compilar en modo producción, usa:
 
-Para iniciar el servidor de desarrollo:
+bash
+Copy
+npm run build-prod
+Iniciar el Servidor de Desarrollo
+Para iniciar el servidor de desarrollo, ejecuta:
+
+bash
+Copy
 npm start
+Pruebas
+Ejecuta los linters para verificar la calidad del código:
 
-Run Tests <a name="run-tests"></a>
-Para ejecutar los linters y verificar la calidad del código:
+HTML:
+
+bash
+Copy
+npx hint .
+CSS:
+
+bash
+Copy
+npx stylelint "src/**/*.css"
+JavaScript:
+
+bash
+Copy
+npx eslint .
+Despliegue
+El proyecto está configurado para desplegarse automáticamente en Azure mediante GitHub Actions. Para desplegar manualmente, ejecuta:
+
+bash
+Copy
+npm run build-prod
+Estructura del Proyecto
+Copy
+proyecto-webpack/
+├── dist/
+├── node_modules/
+├── src/
+│   ├── assets/
+│   ├── js/
+│   ├── index.html
+│   └── main.js
+├── .babelrc
+├── .eslintrc
+├── .gitignore
+├── .stylelintrc
+├── package-lock.json
+├── package.json
+├── server.js
+└── webpack.config.js
+Comandos Importantes
+Instalar dependencias:
+
+bash
+Copy
+npm install
+Compilar en modo desarrollo:
+
+bash
+Copy
+npm run build-dev
+Compilar en modo producción:
+
+bash
+Copy
+npm run build-prod
+Iniciar servidor de desarrollo:
+
+bash
+Copy
+npm start
+Ejecutar linters:
+
+bash
+Copy
 npx hint .  # Verifica HTML
 npx stylelint "src/**/*.css"  # Verifica CSS
 npx eslint .  # Verifica JavaScript
+Contribuir
+¡Las contribuciones son bienvenidas! Si deseas contribuir al proyecto, sigue estos pasos:
 
-Deployment <a name="deployment"></a>
-El proyecto está configurado para desplegarse automáticamente en Azure mediante GitHub Actions. Para desplegar manualmente:
-npm run build-prod
+Haz un fork del repositorio.
 
-<p align="right"><a href="#readme-top">Back to top</a></p>
-👥 Authors <a name="authors"></a>
-Tu Nombre
+Crea una rama con tus cambios:
 
-GitHub: @dillerchaguala
+bash
+Copy
+git checkout -b nombre-de-tu-rama
+Realiza tus cambios y haz commit:
 
-🕹️ Future Features <a name="future-features"></a>
-Integración con TypeScript: Añadir soporte para TypeScript.
+bash
+Copy
+git add .
+git commit -m "Descripción de tus cambios"
+Envía un pull request.
 
-Optimización de Imágenes: Añadir loaders para optimización de imágenes.
-
-Testing Automatizado: Integrar pruebas unitarias con Jest.
-
-🤝 Contributing <a name="contributing"></a>
-¡Las contribuciones, issues y solicitudes de características son bienvenidas! Siéntete libre de revisar la página de issues.
-
-⭐ Show your Support <a name="support"></a>
-Si te gusta este proyecto, por favor dale una estrella ⭐ en GitHub.
-
-👏 Acknowledgements <a name="acknowledgements"></a>
-Agradezco al instructor del SENA por su apoyo y guía.
-
-📃 License <a name="license"></a>
+Licencia
 Este proyecto está bajo la licencia MIT.
 
-<p align="right"><a href="#readme-top">Back to top</a></p>
+Autor
+Tu Nombre
+
+GitHub: @tu-usuario
+
+LinkedIn: Tu Perfil
+
+Agradecimientos
+Agradezco a mis compañeros de aprendizaje y al instructor de SENA por su apoyo y guía.
+
+Preguntas Frecuentes
+¿Cómo puedo contribuir al proyecto?
+Puedes hacer un fork del repositorio, crear una rama con tus cambios y enviar un pull request.
+
+¿Cómo ejecuto el proyecto en producción?
+Ejecuta el siguiente comando:
+
+bash
+Copy
+npm run build-prod
+Referencias
+Documentación de Webpack
+
+Documentación de ESLint
+
+Documentación de Stylelint
+
+Documentación de Hint
+
+<p align="right"><a href="#readme-top">Volver al inicio</a></p> ```
+Explicación del Formato
+Títulos en Negrita: Usé # para los títulos y ** para resaltar el texto en negrita.
+
+Ejemplo: # **PROYECTO WEBPACK CON LINTERS Y DESPLIEGUE EN AZURE**.
+
+Comandos en Cuadritos: Usé bash ``` para mostrar los comandos en un cuadrito.
+
+Ejemplo:
+
+markdown
+Copy
+```bash
+npm install
+Copy
+Listas: Usé - para listas no numeradas y 1. para listas numeradas.
+
+Ejemplo:
+
+markdown
+Copy
+- **Compilar en modo desarrollo**:
+  ```bash
+  npm run build-dev
+Copy
+Código de Bloque: Usé para mostrar bloques de código.
+
+Ejemplo:
+
+markdown
+Copy
+proyecto-webpack/
+├── dist/
+├── node_modules/
+└── src/
+
+Copy
+Enlaces: Usé [texto](enlace) para enlaces.
+
+Ejemplo: [GitHub](https://github.com/dillerchaguala).
+
