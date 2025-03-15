@@ -1,5 +1,4 @@
-markdown
-Copy
+
 # **PROYECTO WEBPACK CON LINTERS Y DESPLIEGUE EN AZURE**
 
 ## **Descripción del Proyecto**
@@ -168,7 +167,7 @@ npm run build-prod
 - Documentación de Hint.
 ---
 
-<p align="right"><a href="#readme-top">Volver al inicio</a></p> ```
+<p align="right"><a href="#readme-top">Volver al inicio</a></p>
 
 
 
