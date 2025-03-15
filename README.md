@@ -33,55 +33,45 @@ Para instalar las dependencias del proyecto, sigue estos pasos:
    ```bash
    git clone https://github.com/tu-usuario/proyecto-webpack.git
    cd proyecto-webpack
-Instala las dependencias:
 
-bash
-Copy
-npm install
-Uso
-Compilar el Proyecto
-Para compilar el proyecto en modo desarrollo, ejecuta:
+1. Instala las dependencias:
+   ```bash
+   npm install
 
-bash
-Copy
-npm run build-dev
-Para compilar en modo producción, usa:
+1. Para compilar el proyecto en modo desarrollo, ejecuta:
+   ```bash
+   npm run build-dev
 
-bash
-Copy
-npm run build-prod
+1. Para compilar en modo producción, usa:
+   ```bash
+   npm run build-prod
+
 Iniciar el Servidor de Desarrollo
-Para iniciar el servidor de desarrollo, ejecuta:
+1. Para iniciar el servidor de desarrollo, ejecuta:
+   ```bash
+   npm start
 
-bash
-Copy
-npm start
 Pruebas
-Ejecuta los linters para verificar la calidad del código:
-
-HTML:
-
-bash
-Copy
-npx hint .
-CSS:
-
-bash
-Copy
-npx stylelint "src/**/*.css"
+1. Ejecuta los linters para verificar la calidad del código:
+HTML,
+CSS,
 JavaScript:
+   ```bash
+   npx hint .
+   npx stylelint "src/**/*.css"
+   npx eslint .
 
-bash
-Copy
-npx eslint .
+
 Despliegue
-El proyecto está configurado para desplegarse automáticamente en Azure mediante GitHub Actions. Para desplegar manualmente, ejecuta:
 
-bash
-Copy
-npm run build-prod
-Estructura del Proyecto
-Copy
+1. El proyecto está configurado para desplegarse       automáticamente en Azure mediante GitHub Actions. Para desplegar manualmente, ejecuta:
+   ```bash
+   npm run build-prod
+
+
+**Estructura del Proyecto**
+
+```
 proyecto-webpack/
 ├── dist/
 ├── node_modules/
@@ -98,34 +88,33 @@ proyecto-webpack/
 ├── package.json
 ├── server.js
 └── webpack.config.js
-Comandos Importantes
+```
+**Comandos Importantes**
+
 Instalar dependencias:
-
-bash
-Copy
-npm install
-Compilar en modo desarrollo:
-
-bash
-Copy
-npm run build-dev
+```bash
+   npm installd
+```
+Instalar dependencias:
+```bash
+   npm run build-dev
+```
 Compilar en modo producción:
-
-bash
-Copy
-npm run build-prod
+```bash
+  npm run build-prod
+```
 Iniciar servidor de desarrollo:
-
-bash
-Copy
+```bash
 npm start
+```
 Ejecutar linters:
 
-bash
-Copy
+```bash
 npx hint .  # Verifica HTML
 npx stylelint "src/**/*.css"  # Verifica CSS
 npx eslint .  # Verifica JavaScript
+```
+
 Contribuir
 ¡Las contribuciones son bienvenidas! Si deseas contribuir al proyecto, sigue estos pasos:
 
@@ -133,87 +122,53 @@ Haz un fork del repositorio.
 
 Crea una rama con tus cambios:
 
-bash
-Copy
+```bash
 git checkout -b nombre-de-tu-rama
+```
+
 Realiza tus cambios y haz commit:
 
-bash
-Copy
+```bash
 git add .
 git commit -m "Descripción de tus cambios"
+```
 Envía un pull request.
 
-Licencia
-Este proyecto está bajo la licencia MIT.
+---
 
-Autor
-Tu Nombre
+## **Licencia**
+- Este proyecto está bajo la licencia `MIT`.
+---
 
-GitHub: @tu-usuario
+---
 
-LinkedIn: Tu Perfil
+## **Autor**
+- Tu Nombre: Diller Chaguala
+- GitHub: `@dillerchaguala`.
+---
 
-Agradecimientos
-Agradezco a mis compañeros de aprendizaje y al instructor de SENA por su apoyo y guía.
+## **Agradecimientos**
+Agradezco al instructor del SENA por su apoyo y guía.
 
-Preguntas Frecuentes
-¿Cómo puedo contribuir al proyecto?
+## **Preguntas Frecuentes**
+
+### **¿Cómo puedo contribuir al proyecto?**
 Puedes hacer un fork del repositorio, crear una rama con tus cambios y enviar un pull request.
 
-¿Cómo ejecuto el proyecto en producción?
+### **¿Cómo ejecuto el proyecto en producción?**
 Ejecuta el siguiente comando:
-
-bash
-Copy
+```
 npm run build-prod
-Referencias
-Documentación de Webpack
+```
 
-Documentación de ESLint
-
-Documentación de Stylelint
-
-Documentación de Hint
+## **Referencias**
+- Documentación de Webpack.
+- Documentación de ESLint.
+- Documentación de Stylelint.
+- Documentación de Hint.
+---
 
 <p align="right"><a href="#readme-top">Volver al inicio</a></p> ```
-Explicación del Formato
-Títulos en Negrita: Usé # para los títulos y ** para resaltar el texto en negrita.
 
-Ejemplo: # **PROYECTO WEBPACK CON LINTERS Y DESPLIEGUE EN AZURE**.
 
-Comandos en Cuadritos: Usé bash ``` para mostrar los comandos en un cuadrito.
-
-Ejemplo:
-
-markdown
-Copy
-```bash
-npm install
-Copy
-Listas: Usé - para listas no numeradas y 1. para listas numeradas.
-
-Ejemplo:
-
-markdown
-Copy
-- **Compilar en modo desarrollo**:
-  ```bash
-  npm run build-dev
-Copy
-Código de Bloque: Usé para mostrar bloques de código.
-
-Ejemplo:
-
-markdown
-Copy
-proyecto-webpack/
-├── dist/
-├── node_modules/
-└── src/
-
-Copy
-Enlaces: Usé [texto](enlace) para enlaces.
-
-Ejemplo: [GitHub](https://github.com/dillerchaguala).
 
