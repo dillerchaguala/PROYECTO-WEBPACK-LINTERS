@@ -1,5 +1,24 @@
 
-# **PROYECTO WEBPACK CON LINTERS Y DESPLIEGUE EN AZURE**
+# PROYECTO WEBPACK CON LINTERS Y DESPLIEGUE EN AZURE
+
+## Tabla de Contenido
+- [Descripción del Proyecto](#descripción-del-proyecto)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Características Principales](#características-principales)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Pruebas](#pruebas)
+- [Despliegue](#despliegue)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Comandos Importantes](#comandos-importantes)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
+- [Autor](#autor)
+- [Agradecimientos](#agradecimientos)
+- [Preguntas Frecuentes](#preguntas-frecuentes)
+- [Referencias](#referencias)
+
+---
 
 ## **Descripción del Proyecto**
 Este proyecto es una configuración básica de **Webpack** para un proyecto de desarrollo web. Incluye la configuración de loaders para **CSS**, **HTML**, y plugins como `html-webpack-plugin` y `webpack-dev-server`. Además, se integra con linters como **ESLint**, **Stylelint**, y **Hint** para garantizar la calidad del código. El proyecto también está configurado para desplegarse automáticamente en **Azure** mediante **GitHub Actions**.
