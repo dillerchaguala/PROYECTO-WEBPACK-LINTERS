@@ -179,12 +179,7 @@ Ejecuta el siguiente comando:
 npm run build-prod
 ```
 
-## **Referencias**
-- Documentación de Webpack.
-- Documentación de ESLint.
-- Documentación de Stylelint.
-- Documentación de Hint.
----
+
 
 <p align="right"><a href="#readme-top">Volver al inicio</a></p>
 
